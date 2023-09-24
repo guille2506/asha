@@ -183,22 +183,56 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 /* Estilo para la marquesina */
-.marquee {
+/* .marquee {
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
     animation: marquee 20s linear infinite;
-}
+} */
 
 /* Animación de la marquesina */
-@keyframes marquee {
+/* @keyframes marquee {
     0% {
         transform: translateX(100%);
     }
     100% {
         transform: translateX(-100%);
     }
+} */
+
+/* Estilo para la marquesina */
+.marquee {
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 20s linear infinite;
+    width: 100%; /* Extiende la ventana al 100% del ancho */
 }
+
+/* Estilo para los mensajes en la marquesina */
+.marquee p span {
+    margin-right: 2px; /* Espacio entre mensajes */
+}
+
+/* Animación de desplazamiento */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Comienza fuera del área visible hacia la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* Termina fuera del área visible hacia la izquierda */
+    }
+}
+
+.marquee .letra {
+    background-color: #41b9f9;
+    color: #FFFFFF;
+    font-weight: 540; /* Ligero */
+
+}
+
+
+  
 
 /* menu  */
 
@@ -219,4 +253,134 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     width: 100%; /* Ancho al 100% del contenedor */
     padding: 0; /* Sin relleno */
     margin: 0; /* Sin márgenes */
+  }
+
+
+  .w3-padding-64{
+    background: linear-gradient(to right,#CC75FF 0%,#34D5FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+  .txt {
+    font-size: 17 px;
+    color: #6F7D95;
+  }
+
+.section__title{
+    font-size: 34px;
+    text-align: center!important;
+    color: #FFFFFF;
+    font-family: circular_bold,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol!important;
+    font-weight: 700;
+}
+
+/* <!-- our acount types --> */
+/* Estilo para centrar los botones horizontalmente */
+.d-flex {
+    display: flex;
+    justify-content: center; /* Centro horizontalmente los botones */
+    align-items: center; /* Alinea verticalmente los botones */
+  }
+  
+  /* Estilo para los botones */
+  .menu_activity {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centro los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centro el texto dentro de los botones */
+  }
+  
+  .menu_activity li {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centro el texto dentro de los botones */
+  }
+  
+  .menu_activity a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #1C1F2C;
+    font-size: 20px; /* Tamaño de fuente más grande */
+    padding: 10px 20px; /* Espaciado interno */
+    border: 2px solid #000; /* Borde de 2px sólido */
+    border-radius: 20px; /* Bordes redondeados */
+    transition: color 0.3s, background-color 0.3s; /* Efecto de transición en color */
+  }
+  
+  
+  /* Cambio de color en hover */
+  .menu_activity a:hover {
+    color: #CA77FF;
+  background-color: #000; /* Cambia el fondo en hover */
+  border-color: #CA77FF; /* Cambia el borde en hover */
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .menu_activity {
+      flex-direction: column; /* Apila los botones en pantallas pequeñas */
+      text-align: center; /* Centro el texto en pantallas pequeñas */
+    }
+  }
+
+
+
+  /* cheap */
+  .d-flexs{
+    display: flex;
+    justify-content: center; /* Centro horizontalmente los botones */
+    align-items: center; /* Alinea verticalmente los botones */
+  }
+  
+  /* Estilo para los botones */
+  .menu_activitys {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centro los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centro el texto dentro de los botones */
+  }
+  
+  .menu_activitys li {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centro el texto dentro de los botones */
+  }
+  
+  .menu_activitys a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #242635;
+    font-size: 14px; /* Tamaño de fuente más grande */
+    padding: 10px 20px; /* Espaciado interno */
+    border: 2px solid #000; /* Borde de 2px sólido */
+    border-radius: 20px; /* Bordes redondeados */
+    transition: color 0.3s, background-color 0.3s; /* Efecto de transición en color */
+  }
+  
+  
+  /* Cambio de color en hover */
+  .menu_activitys a:hover {
+    color: #4794dd;
+  background-color: #242635; /* Cambia el fondo en hover */
+  border-color: #4794dd; /* Cambia el borde en hover */
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .menu_activitys {
+      flex-direction: column; /* Apila los botones en pantallas pequeñas */
+      text-align: center; /* Centro el texto en pantallas pequeñas */
+    }
   }
