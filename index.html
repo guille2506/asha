@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title >PP1 Ext2</title>
+<link rel="icon" href="./images/logo_white_color (1).png" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"  id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>PractProf1<br>Diseño<option value=""></option></b></h3>
+  </div>
+
+  <div class="btn-menu">
+    <label h for="" class="icon-menus" src></label>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TURBOSMURF</a> 
+    <a href="#Servicios" id="btn3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Servicios</a> 
+    <a href="#Productos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Productos</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>PractProf1 Diseño</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ 
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+ 
+  <div class="w3-containers" id="Servicios" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" id="titServicios">
+        <b class="gradiente-texto">
+            <img src="./images/logo_white_color (1).png" alt="titulo TURBOSMURF" width="70" > TURBOSMURF
+        </b>
+    </h1>
+    <p style="color: #ffff;">Cansado de perder tus rankeds por las ratitas ?</p>
+    <p style="color: #ffff;">
+        No te preocupes mas con nuestros mejores players elebaran tu cuenta al rango que tu desees.
+    </p>
+</div>
+
+ <!-- Marquesina -->
+ <div id="marquee1" class="marquee blue">
+  <p style="font-size: 24px;">SMURFING IS BACK, ACCOUNTS NO LONGER AFFECTED BY BANS-</p>
+  <!-- Agrega más mensajes aquí -->
+</div>
+
+
+
+  <!-- Servicios -->
+  <div class="w3-container" id="Servicios" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" id="titServicios"><b>Servicios</b></h1>
+    <p style="color: #ffff;">Somos un servicio de diseño de interiores que se centra en lo mejor para su hogar y lo mejor para usted!</p>
+    <p  style="color: #ffff;">
+      Trabajamos una amplisima gama de posibilidades en diseño de interior para tu hogar.
+    </p>
+
+
+    <div id="segundaParte" style="display: none;"> segundaParte </div>
+  </div>
+    
+    <div id="divcontenedor">
+      
+      <div id="opciones">
+        <p style="color: #ffff;">
+          Esta semana estamos focalizando . <br>Hacia donde quieres llevar tu cocina hoy?
+        </p>
+        
+  <div id="segundaParte" style="display: none;"> segundaParte </div>
+  
+
+  <!-- Productos / Pricing Tables -->
+  <div class="w3-container" id="Productos" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Productos.</b></h1>
+    <p style="color: #ffff;">Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+
+<!-- W3.CSS Container -->
+<!-- <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="" title="PractProf1-2023" target="_blank" class="w3-hover-opacity">PractProf1</a></p></div> -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
+
+
