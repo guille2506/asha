@@ -384,3 +384,145 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
       text-align: center; /* Centro el texto en pantallas pequeñas */
     }
   }
+
+
+  /* cards */
+
+  /* .title {
+    text-align: center;
+    font-size: 40px;
+    color: #009688;
+    margin-top: 100px;
+    font-weight: 100;
+  } */
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+  }
+  
+  .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #1C1F2C;
+  }
+  
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(29, 29, 29, 0.2);
+  }
+  
+  .card img {
+    width: 330px;
+    height: 220px;
+  }
+  
+  .card h4 {
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  
+  .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+  
+  .read-more-button {
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #43b6f9;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
+  }
+  
+  .read-more-button:hover {
+    background-color: #00bcd4;
+    color: white;
+  }
+  
+
+
+/* Estilos para los cuadros */
+.container2 {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.col-md-4 {
+  width: 30%; /* Esto asegura que haya espacio suficiente para 3 cuadros en una fila */
+  margin: 10px; /* Espacio entre los cuadros */
+}
+
+.item {
+  text-align: center;
+  padding: 20px;
+  background-color: #1C1F2C; /* Color de fondo */
+  border-radius: 10px; /* Border radius */
+}
+
+.logo {
+  background-color: #3B5B5F; /* Color de fondo del logo */
+  border-radius: 50%; /* Border radius del logo */
+  padding: 20px; /* Espacio alrededor del logo */
+  display: inline-block;
+}
+
+.logo img {
+  max-width: 100%; /* Establece el ancho máximo de la imagen al 100% */
+  max-height: 50px; /* Establece la altura máxima de la imagen */
+  border-radius: 50%; /* Puedes ajustar el border radius aquí también */
+}
+
+h3 {
+  color: #FFFFFF; /* Color del texto del título */
+}
+
+p {
+  color: #6F7D95; /* Color del texto de la descripción */
+}
+
+
+
+/* cuadros de abajo */
+
+/* Estilos para el nuevo cuadro */
+.item.aboutUs-content {
+  background-color: #242635; /* Color de fondo */
+  border-radius: 10px; /* Border radius */
+  padding: 20px; /* Espaciado interno */
+  text-align: left; /* Alineación del texto */
+  color: #FFFFFF; /* Color del texto */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para los títulos */
+.item.aboutUs-content h2 {
+  font-size: 24px; /* Tamaño de fuente para el título */
+}
+
+/* Estilos para los párrafos */
+.item.aboutUs-content p {
+  font-size: 16px; /* Tamaño de fuente para los párrafos */
+  line-height: 1.5; /* Espacio entre líneas */
+}
+ 
